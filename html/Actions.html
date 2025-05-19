@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8"/>
+        
+        <link rel="stylesheet" href="../css/Actions.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+        <title>Home</title>
+
+
+                
+    </head>
+
+
+
+
+    <body>
+
+
+
+        <header>
+
+            
+            <h1><div class="title">Good4Health</div></h1>
+
+            <div class="navbar">
+
+                <img src="../img/logo.png" class="logo">
+
+                <a href="Home.html" class="nav-link"> Home </a>
+
+                <a href="link/Goals" class="nav-link"> Our Goals </a>
+
+                <a href="Actions.html" class="nav-link"> Our Actions </a>
+
+                <a href="link/Crew" class="nav-link"> Our Crew </a>
+
+                <a href="link/About" class="nav-link"> About us </a>
+
+
+            </div>
+
+
+
+        </header>
+
+
+        <div class="content">
+
+
+            <h2>Where we act</h2>
+
+            <div id="map"></div>
+
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+            <script>
+                var map = L.map('map').setView([0, 40], 2);
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap contributors'}).addTo(map);
+
+                L.marker([-15.5, -65.67]).addTo(map).bindPopup('San Ignacio').openPopup();
+                L.marker([38.98, 125.75]).addTo(map).bindPopup('Pyongyang').openPopup();
+                L.marker([-14.25, 12.35]).addTo(map).bindPopup('Labé').openPopup();
+                L.marker([19.32, 12.82]).addTo(map).bindPopup('Dirkou').openPopup();
+
+            </script>
+
+
+            <p>The places where Good4Health acts are numerous. Our actions can be found in Bolivia, in Angola, in Niger and in North Corea.
+                <br/> Our actions include, but are not limited, to creation of wells to provide safe water to population, distribution and administration of medicine,
+                <br/> and courses to teach basic hygiene reflexes to people. Our numbers speak for themselves : many lives can be saved simply by giving material and
+                <br/> proper education.
+            </p>
+
+            <div class="data_table">
+                
+            </div>
+
+
+
+        </div>
+
+
+        <footer>
+
+            <p>Copyright , Site by BENHAMED-AUBRY and JEANDEAU </p>
+
+
+        </footer>
+
+
+
+    </body>
+
+
+
+       
+
+
+</html>
