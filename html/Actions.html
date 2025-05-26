@@ -11,7 +11,7 @@
 
         <title>Home</title>
 
-
+        <script src="../javascript/Actions.js"></script>
                 
     </head>
 
@@ -79,11 +79,72 @@
 
             <div class="data_table">
                 
+                <table>
+
+                    <title>A bit of data :</title>
+                    <thead>
+                        <th>Event type</th>
+                        <th>Number of events :</th>
+                        <th>Number of people helped :</th>
+                    </thead>
+
+                    <tr>
+                        <th>vaccines giveaways</th>
+                        <td>500</td>
+                        <td id="vaccine">250000</td>
+                    </tr>
+
+                    <tr>
+                        <th>hygiene prevention</th>
+                        <td>1000</td>
+                        <td>40 000</td>
+                    </tr>
+
+                    <tr>
+                        <th>well constructions</th>
+                        <td>15</td>
+                        <td id="well">15000</td>
+                    </tr>
+
+                </table>
+
+
+
             </div>
 
 
+            <div class="help">
+
+
+                <p class="help_people">If you give :</p>
+
+                <div class="number_input">
+
+                    <button class="increase-decrease" onclick="increase(-1)">-</button>
+                    <input type="number" id="money" value="0" readonly>
+                    <button class="increase-decrease" onclick="increase(1)">+</button>
+                    <p class="help_people">$</p>
+
+
+                </div>
+
+                <p class="help_people">You will contribute to help <span id="nbchildren">0</span> persons to get water, and contribute to the vaccination of <span id="nbvaccine">0</span> persons. Thank You !</p>
+
+
+
+
+            </div>
+
+
+            <button class="gift" onclick="gift()">Give</button>
+
 
         </div>
+
+
+
+        
+
 
 
         <footer>

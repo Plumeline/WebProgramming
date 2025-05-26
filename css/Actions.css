@@ -103,3 +103,55 @@ h2{
     font-size: 2rem;
     padding-top: 2%;
 }
+
+
+table{
+  border: 3px black;
+  text-align: center;
+  margin:0 auto;
+  margin-top: 5%;
+  font-size: 1.5rem;
+
+}
+
+
+th{
+  border: 3px black;
+  background-color: #1549e2;
+  padding:2%;
+  color: white;
+  margin:1%;
+}
+
+td{
+  border:3px black;
+  background-color: white;
+  color: #1549e2;
+}
+
+
+.help{
+  margin-top: 5%;
+}
+
+.help_people{
+  color:#1549e2 ;
+  font-size: 1.25rem;
+}
+
+.increase-decrease{
+  cursor:pointer;
+}
+
+#money{
+  width:5%;
+  text-align: center;
+}
+
+.gift{
+  font-size: 1.25rem;
+  padding:0.5% 1% 0.5% 1%;
+  background-color: #1549e2;
+  color: white;
+  cursor:pointer;
+}
