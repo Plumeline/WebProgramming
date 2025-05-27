@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="../css/Crew.css">
 
         <title>Home</title>
+
+        <script src="../javascript/Crew.js"></script>
+
     </head>
 
 
@@ -80,17 +83,97 @@
 
                 <h1>Join us !</h1>
 
-                <form class="inscription">
+                <div class="inscription" id="inscription">
 
 
+                    <div class="first_column">
+                        <input type="text" id="first_name" placeholder="Enter first name here" required>
+
+
+                        <input type="text" id="last_name" placeholder="Enter last name here" required>
+
+
+                        
+
+                        <label for="birth">Date of Birth :</label>    
+                        <input type="date" id="birth" placeholder="dd/mm/yyyy" defaultValue="" required>
+
+
+                        
+
+
+                        <input type="text" id="collaborator" placeholder="Enter type of collaborator" required>
+
+                    </div>  
+                    
+                    <div class="second_column">
+
+                        <input type="email" id="email" placeholder="Enter email" required>
+                        
+                        <input type="password" id="password" placeholder="Enter password" required>
+
+                        <input type="password" id="confirmation" placeholder="Enter password confimation" required>
+
+                        <button onclick="subscribe()">Submit</button>
+
+                    </div>
+
+                    <div class="third_column">
+
+                        <p class="contributor">Total number of contributors : </p>
+
+                        <div class="nbcontributors" id="nbcontributors">17000</div>
+
+                    </div>
                     
 
+                </div>
 
-                </form>
+                <div class="sign_in" id="sign_in">
+
+
+                    <h1>If you already have an account, please sign in :</h1>
+
+                    <br>
+                    <br>
+
+                    <input type="text" id="email_sign_in" placeholder="Enter email address here">
+
+                    <br>
+                    <br>
+
+                    <input type="password" id="password_sign_in" placeholder="Enter password here">
+
+                    <br>
+                    <br>
+
+                    <button onclick="sign_in()">Sign In</button>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="signed_in" id="welcome">
+
+
+                Welcome <span id="username"></span>, nice to see you're one of us !
+                <br>
+                You are already connected.  
+
+                <br>
+
+                <button id="sign_out" onclick="sign_out()"> Sign out </button>
 
 
             </div>
             
+
+
+
+            <div class="space">
+                
+            </div>
             
 
         </div>
