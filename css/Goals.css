@@ -1,0 +1,153 @@
+header {
+  background-color: #203864;
+  padding: 1%;
+  margin: 2% 2% 2% 2%;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-style: bold;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 1%;
+    font-size: 3rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  margin-top: 0%;
+  margin-bottom: 1%;
+}
+
+.logo {
+  height: 20%;
+  margin: 0%;
+  width: 10%;
+  padding: 0%;
+}
+
+.nav-link {
+  color: white;
+  font-size: 200%;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 2%;
+}
+
+.nav-link:hover{
+    color:rgba(255, 255, 255, 0.651)
+}
+
+footer{
+    background-color: #203864;
+    padding:1%;
+    text-align: center;
+    
+    color: white;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 1%;
+
+}
+
+
+/* ---------------- Specific to the page ----------------- */
+
+
+#intro {
+  background-color: #c2e0f7;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 0%;
+
+  padding-right: 1%;
+  padding-left: 1%;
+  overflow: hidden;
+}
+
+p {
+  margin-left: 2.5%;
+
+  font-size: large;
+}
+
+#title {
+  color: black;
+  align-self: center;
+}
+
+#goal_section {
+  background-color: #c2e0f7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-top: 0%;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding-right: 1%;
+  padding-left: 1%;
+  padding-top: 0%;
+  padding-bottom: 2%;
+}
+
+.goal_clickable {
+  align-self: flex-start;
+
+  cursor: pointer;
+  background-color: #203864;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 5%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 40%;
+  min-height: 125px;
+
+  border: solid 5px transparent;
+  border-radius: 10px;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  font-size: xx-large;
+}
+
+.goal_clickable:hover {
+  border:solid 5px black;
+}
+
+.fullInfo {
+  display: none;
+  background-color: #203864;
+  color: white;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 100%;
+  min-height: 75px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  padding: 2%;
+  justify-content:space-around;
+
+  font-size:larger;
+}
+
+ul li{
+  margin-bottom: 2vw;
+}
+
+img {
+  width: 33%;
+  height: auto;
+
+  margin-right: 2%;
+  margin-left: 3%;
+}
