@@ -104,7 +104,7 @@ function subscribe(){
 
     
 
-    //log(firstname.value);
+    log(firstname.value);
     
 
     //we add to the storage this combination to let us know we are connected to this account.
@@ -225,7 +225,7 @@ function sign_in(){
     if(userdata[0] === password.value){
 
 
-        //log(userdata[1]);
+        log(userdata[1]);
 
 
         //if yes the user can connect, we store the state connected to the local storage
